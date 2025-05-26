@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El Buen Sabor</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+
+  <header>
+    <div class="navbar">
+      <div class="logo-container">
+        <img src="img/logoton.png" alt="Logo El Buen Sabor" class="logo-grande" />
+      </div>
+
+      <!-- Botón hamburguesa -->
+      <div class="hamburger" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <div class="nav-links" id="navLinks">
+        <a href="#">Carta</a>
+        <a href="#">Servicios</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-banner">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Bienvenidos</h1>
+      <p class="hero-sub">
+        Explora el sabor casero y criollo con nuestras sopas tradicionales,<br />
+        preparadas con ingredientes frescos y pasión culinaria.
+      </p>
+      <button>Ver más</button>
+    </div>
+    <img src="img/ban.png" alt="Bienvenida El Buen Sabor" />
+  </section>
+
+  <section class="section">
+    <div class="section-title"><h2>Carta</h2></div>
+    <div class="carta">
+      <div class="item">
+        <img src="img/sopa-de-langostinos.webp" alt="Sopa de langostinos">
+        <h3>Sopa de langostinos</h3>
+        <p>Deliciosa sopa marina con langostinos frescos y especias peruanas.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="item">
+        <img src="img/crema-de-zapallo.jpg" alt="Crema de zapallo">
+        <h3>Crema de zapallo</h3>
+        <p>Una opción suave y saludable con zapallo peruano.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="item">
+        <img src="img/sopa-de-verduras-1.webp" alt="Sopa de verduras">
+        <h3>Sopa de verduras</h3>
+        <p>Combinación perfecta de vegetales frescos.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="item">
+        <img src="img/intro-1668621852.webp" alt="Ramen">
+        <h3>Ramen</h3>
+        <p>Un toque oriental con nuestro caldo especiado y fideos artesanales.</p>
+        <a href="#">Leer más</a>
+      </div>
+      <div class="item">
+        <img src="img/sancochado-deres.jpg" alt="Sancochado">
+        <h3>Sancochado</h3>
+        <p>Clásico plato peruano con carne, papa, yuca y verduras.</p>
+        <a href="#">Leer más</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="video-section">
+    <h2>Servicios</h2>
+    <div class="video-wrapper">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/XQREWLXkV6U?si=0CtD2nEwEJSnZeM0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <section class="nosotros">
+    <div>
+      <h2><span>Nosotros</span> <strong>El Buen Sabor</strong></h2>
+      <p>Desde nuestros inicios, nos propusimos llevar el sabor criollo tradicional a todos los hogares. "El Buen Sabor" nació como un sueño familiar y hoy es una realidad reconocida por su sazón, calidad y calidez en la atención.</p>
+      <p>Ofrecemos sopas caseras, panes regionales, y platos que celebran la cocina peruana con orgullo.</p>
+    </div>
+    <img src="img/el-buen-sabor-lugares-para-cenar.png" alt="Local El Buen Sabor" class="img-nosotros">
+  </section>
+
+  <footer>
+    <div class="contacto">
+      <h3>Contacto</h3>
+      <p>¿Buscas una experiencia culinaria inolvidable? Ven a "El Buen Sabor" y disfruta de nuestros platos en cualquiera de nuestras sedes.</p>
+      <p>Atendemos todos los días de la semana desde las 11 a.m. hasta las 11 p.m. Escríbenos a <strong>contacto@elbuensabor.com</strong> o llámanos al <strong>(01) 555-1234</strong>.</p>
+    </div>
+    <div class="sedes">
+      <h3>Sedes</h3>
+      <ul>
+        <li><strong>Lince:</strong> Av. Ricardo Palma 205</li>
+        <li><strong>Surquillo:</strong> Av. Angamos Este 609</li>
+        <li><strong>Plaza Norte:</strong> Av. Alfredo Mendiola 1400</li>
+        <li><strong>San Miguel:</strong> Av. La Marina 1541</li>
+      </ul>
+    </div>
+  </footer>
+  <div class="copy">&copy; 2024 El Buen Sabor - Todos los derechos reservados</div>
+
+  <!-- JS para menú hamburguesa -->
+  <script>
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('active');
+  }
+</script>
+
+</body>
+</html>
